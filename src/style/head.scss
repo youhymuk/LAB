@@ -1,0 +1,86 @@
+.head {
+  border-top: 4px solid $grey;
+  border-bottom: 4px solid rgba(88, 100, 122, 0.21);
+  background: rgba(88, 100, 122, 0.11);
+  padding: rem(16px) 0 rem(7px);
+}
+
+.logo {
+	min-width: rem(127px);
+	@include tablets {
+		display: block;
+		margin-bottom: rem(10px);
+	}
+}
+
+.menu {
+	@include flex(space-between);
+  margin-right: rem(16px);
+}
+
+.menu__item {
+	margin-right: 5px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.menu-opened {
+  flex-direction: column;
+  background: rgba(0,0,0,0.1);
+  padding: 0 rem(10px) rem(10px);
+  margin: rem(10px) 0 rem(10px);
+	border-radius: 10px;
+	.menu__item {
+		padding: rem(10px);
+		width: 100%;
+		border-bottom: 1px solid rgba(245, 245, 245, .4);
+		text-align: center;
+	}
+}
+
+.btn {
+	@include Museo(bold);
+	display: block;
+	text-align: center;
+	transition: all .6s ease;
+	border: none;
+}
+
+.call {
+	@extend .btn;
+  max-width: rem(156px);
+	width: 100%;
+	height: rem(35px);
+	line-height: rem(35px);
+	border-bottom: 4px solid #149d6f;
+	font-size: rem(13px);
+	background-color: $green;
+	color: $white;
+	i {
+		color: #46e6b0;
+		margin-right: rem(5px);
+	}
+	&:hover {
+		color: $white;
+		background-color: $red;
+		border-bottom-color: #102e62;
+	}
+}
+
+.menu__link {
+  color: $main-nav;
+  font-size: rem(17px);
+	@include Museo(bold);
+	&_current {
+		color: $red;
+	}
+	&:hover {
+		color: $red;
+	}
+}
+
+.menu-btn {
+  color: $main-nav;
+  font-size: rem(26px);
+}

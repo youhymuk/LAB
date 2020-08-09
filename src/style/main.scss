@@ -1,0 +1,70 @@
+//adjustment variables
+$body-font : 'Museo Sans Cyrl 300', sans-serif;
+
+//colors
+$main-text: #404048;
+$titles: #081d42;
+$white: #fff;
+$red: #b81c31;
+$green: #1cb883;
+$main-nav: #3f4b60;
+$breadcrumbs: #49556b;
+$aside: #747487;
+$grey: #58647a;
+
+//layout
+@import './misc/fonts';
+@import './misc/mixins';
+@import './misc/adjustment';
+@import './misc/preloader';
+
+//styles
+@import 'head';
+@import 'footer';
+@import 'home';
+@import 'breadcrumbs';
+@import 'about';
+@import 'services';
+@import 'contacts';
+
+								 /* Modal */
+.hidden {
+	display: none;
+}
+
+.form {
+	background-color: #fff;
+  text-align: center;
+  padding: rem(52px);
+	width: rem(400px);
+	margin: auto;
+	border: none;
+	border-radius: rem(5px);
+	box-shadow: 0px rem(4px) rem(46px) 0px rgba(#000, 0.41);
+	position: relative;
+	.call {
+		line-height: rem(35px);
+		max-width: none;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.form__item {
+	padding: rem(20px) 0;
+	font-size: rem(14px);
+	width: 100%;
+	margin-bottom: rem(20px);
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #acacac;
+	&:focus {
+		outline: none;
+		border-color: #acacac;
+	}
+}
+
+.form__desc {
+  margin: rem(14px) 0;
+}

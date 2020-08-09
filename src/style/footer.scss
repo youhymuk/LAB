@@ -1,0 +1,109 @@
+/* ------ Information ------ */
+.information {
+  padding: rem(41px) 0 0;
+  background-color: #3a4456;
+  line-height: normal;
+}
+
+.info {
+	margin-bottom: rem(48px);
+	@include tablets {
+		text-align: center;
+	}
+}
+
+.info__title {
+  color: rgba(245, 245, 245, .66);
+  margin-bottom: rem(16px);
+}
+
+.info__link {
+  color: rgba(245, 245, 245, .46);
+  font-size: rem(14px);
+	line-height: rem(21px);
+	&:hover {
+		color: $white;
+	}
+}
+
+
+
+     /* ------ Footer ------ */
+.footer {
+  background-color: #1f2531;
+  border-bottom: rem(18px) solid $grey;
+  @include Museo(thin);
+  font-size: rem(12px);
+	color: rgba(245, 245, 245, .6);
+	@include laptop {
+		padding: rem(35px) 0;
+	}
+	@include tablets {
+		text-align: center;
+	}
+	.call {
+		@include tablets {
+			margin: 0 auto;
+		}
+	}
+}
+
+.ft-logo {
+	margin-bottom: rem(43px);
+	@include laptop {
+		margin: 0;
+	}
+}
+
+.coop {
+  margin-bottom: rem(15px);
+  max-width: rem(194px);
+  line-height: auto;
+}
+
+.adress {
+  max-width: rem(105px);
+	line-height: auto;
+	@include tablets {
+		margin-bottom: rem(20px);
+	}
+}
+
+.wrapping {
+  width: rem(170px);
+	align-items: center;
+	margin-bottom: rem(19px);
+}
+
+.icon {
+  width: rem(25px);
+  height: rem(25px);
+  text-align: center;
+  line-height: rem(25px);
+  border: 1px solid rgba(245, 245, 245, .6);
+  margin-right: rem(10px);
+}
+
+.by {
+  max-width: rem(135px);
+	font-size: rem(10px);
+	span {
+		font-size: rem(12px);
+		text-transform: uppercase;
+	}
+}
+
+.credit {
+  max-width: rem(133px);
+	@include tablets {
+		margin-bottom: rem(19px);
+	}
+}
+
+.main-page {
+  display: block;
+	color: rgba(245, 245, 245, .6);
+	&:hover {
+		color: $white;
+	}
+}

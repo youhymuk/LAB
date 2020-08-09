@@ -1,0 +1,249 @@
+        /* ------ Hero Screen ------ */
+.header {
+	background: rgba(165, 198, 255, 0.47) url('../assets/img/bg-truck.png') no-repeat fixed center / cover;
+}
+
+.offer {
+  padding: rem(94px) 0 rem(148px);
+  border-bottom: rem(16px) solid rgba(245, 245, 245, .21);
+}
+
+.offer__text {
+  max-width: rem(461px);
+  font-size: rem(29px);
+  @include Museo(thin);
+  color: $titles;
+  margin: rem(10px) 0 rem(23px);
+  line-height: 1.28em;
+}
+
+.socials {
+  width: rem(166px);
+  padding: rem(8px) 0;
+  border-radius: rem(3px);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.66);
+  background-color: rgba(255, 255, 255, 0.82);
+	@include flex(space-around, center);
+}
+
+.socials__link {
+  color: #23599c;
+  border: 2px solid;
+  padding: 0 rem(5px);
+	font-size: rem(17px);
+	&:hover{
+		transform: scale(1.1);
+	}
+	&_twt {
+		color: #43c9fd;
+		padding: 0 rem(4px);
+	}
+	
+	&_tg {
+		color: #25a3d4;
+		padding: 0 rem(4px);
+	}
+}
+
+       /* ------ Trust ------ */
+.trust {
+  padding: rem(53px) 0 rem(100px);
+  background-color: #f1f1f3;
+}
+
+.first-bg {
+  background-color: #f1f1f3;
+}
+
+.trust-title {
+	margin-bottom: rem(40px);
+	text-align: center;
+}
+
+.advant {
+	text-align: center;
+	@include laptop {
+		margin-top: rem(44px);
+	}
+	&__icon {
+		width: rem(119px);
+		height: rem(119px);
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+	&__title {
+		margin: rem(22px) 0 rem(10px);
+	}
+}
+
+.advant__icon_first {
+  background: #c8cbdb url('../assets/img/home-icon1.png') no-repeat center;
+}
+
+.advant__icon_second {
+  background: #c8cbdb url('../assets/img/home-icon2.png') no-repeat center;
+}
+
+.advant__icon_third {
+  background: #c8cbdb url('../assets/img/home-icon3.png') no-repeat center;
+}
+
+.more {
+	@extend .call;
+  margin: rem(-125px) auto 0;
+  display: block;
+	width: rem(170px);
+	height: rem(44px);
+	font-size: rem(16px);
+  line-height: rem(44px);
+}
+
+        /* ------ Qualities ------ */
+.qualities {
+  padding: rem(102px) 0 rem(76px);
+}
+
+.red-text {
+  color: $red;
+}
+
+.letter {
+  width: rem(86px);
+  height: rem(86px);
+  background-color: #102e62;
+  border-radius: 50%;
+  text-align: center;
+  line-height: rem(86px);
+  font-size: rem(50px);
+  color: $white;
+  @include Museo(thin);
+  margin: 0 auto;
+}
+.quality {
+	text-align: center;
+	@include laptop {
+		margin-bottom: rem(35px);
+	}
+	&__title {
+		margin: rem(4px) 0 rem(7px);
+		font-size: rem(24px);
+		@include Museo(thin);
+	}
+}
+
+
+.advant__text, .quality__text {
+  letter-spacing: 0.02em;
+  line-height: 1.3em;
+}
+
+      /* ------ Object ------ */
+.object {
+  background: $grey url('../assets/img/home-bg2.jpg') no-repeat center/cover;
+  padding: rem(40px) 0 rem(25px);
+}
+
+.wrap {
+	@include flex(space-between);
+	@include tablets {
+		flex-wrap: wrap;
+	}
+}
+
+.wrapping {
+	@include flex(space-between);
+}
+
+.mission {
+	@include laptop {
+		margin-bottom: rem(50px);
+	}
+}
+
+.mission__wrapp {
+		margin-right: rem(27px);
+		@include tablets {
+			margin: 0;
+		}
+  }
+
+.mission__title, .news__title {
+  color: $white;
+  opacity: 0.4;
+  padding-bottom: rem(10px);
+  margin-bottom: rem(17px);
+  border-bottom: 3px solid rgba(245, 245, 245, .1)
+}
+
+.mission__text {
+	max-width: rem(470px);
+	font-size: rem(15px);
+  line-height: 1.2em;
+	color: rgba(245, 245, 245, .67);
+	@include tablets {
+		max-width: none;
+	}
+	&_width {
+		max-width: rem(370px);
+	}
+	&:first-child {
+		margin-bottom: rem(18px);
+	}
+}
+
+.mission__btn {
+	@extend .btn;
+  width: rem(173px);
+	line-height: rem(44px);
+	height: rem(44px);
+  font-size: rem(16px);
+  text-align: center;
+  color: rgba(245, 245, 245, .72);
+  border: 2px solid rgba(245, 245, 245, .72);
+  background-color: transparent;
+	margin-top: rem(35px);
+	@include tablets {
+		margin-bottom: rem(35px);
+	}
+	&:hover {
+		background-color: rgba(245, 245, 245, .72);
+		color: $grey;
+		border-bottom-color: rgba(245, 245, 245, .72);
+	}
+}
+
+.news__item {
+  display: flex;
+  border-bottom: 1px solid rgba(245, 245, 245, .1);
+  padding-bottom: rem(12px);
+	margin-bottom: rem(12px);
+
+	
+}
+
+.news__pic {
+  width: rem(56px);
+  max-height: 100%;
+  overflow-y: hidden;
+  margin-right: rem(14px);
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.news__info {
+  color: rgba(245, 245, 245, .75);
+  @include Museo(bold);
+  font-size: rem(13px);
+	line-height: 1.3em;
+	&:hover {
+		color: $white;
+	}
+}
+
+.news__date {
+  display: block;
+  color: rgba(245, 245, 245, .43);
+  @include Museo(thin);
+  font-size: rem(10px);
+  padding-top: rem(11px);
+}
